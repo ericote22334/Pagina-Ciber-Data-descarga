@@ -15,12 +15,12 @@
             <img src="Imagenes/logo.png" alt="Logo" class="logo-img">
           </div>
           <div class="nav-links">
-            <button class="nav-link" onclick="location.href='#Servicios'">Servicios</button>
-            <button class="nav-link" onclick="location.href='#TituloSeguridad'">Seguridad</button>
-            <button class="nav-link" onclick="location.href='#SobreNosotros'">Sobre Nosotros</button>
-            <button class="nav-link" onclick="location.href='#trabajos'">Trabajos</button>
-            <button class="nav-link" onclick="location.href='#Contacto'">Contacto</button>
-            <button class="nav-link" onclick="location.href='#formulario'">formulario</button>
+            <button class="nav-link" onclick="location.href='#Servicios'" data-i18n="nav_servicios">Servicios</button>
+            <button class="nav-link" onclick="location.href='#TituloSeguridad'"data-i18n="nav_seguridad">Seguridad</button>
+            <button class="nav-link" onclick="location.href='#SobreNosotros'"data-i18n="nav_sobrenosotros">Sobre Nosotros</button>
+            <button class="nav-link" onclick="location.href='#trabajos'"data-i18n="nav_trabajos">Trabajos</button>
+            <button class="nav-link" onclick="location.href='#Contacto'"data-i18n="nav_contacto">Contacto</button>
+            <button class="nav-link" onclick="location.href='#formulario'"data-i18n="nav_formulario">Formulario</button>
           </div>
         </div>
       </nav>
@@ -69,7 +69,7 @@
 
     <script src="JavaScript/Carrusel.js"></script>
 
-    <h2>Servicios</h2>
+    <h2 data-i18n="titulo_servicios">Servicios</h2>
     <section id="Servicios">
 
         <div class="services">
@@ -89,16 +89,16 @@
             </div>
         </div>
     </section>
-    <h2 id="TituloSeguridad">Seguridad</h2>
+    <h2 id="TituloSeguridad"data-i18n="titulo_seguridad">Seguridad</h2>
     <br><br>
-    <h3 id="subtitulo3">LE GARANTIZAMOS</h3>
+    <h3 id="subtitulo3" data-i18n="garantizo">LE GARANTIZAMOS</h3>
 
     <div id="ListaSeguridad">
-        <li>Proteger su informacion personal</li>
-        <li>resguardar sus contraseñas</li>
-        <li>ser claros al momento de dirigirnos a usted</li>
-        <li>Adaptarnos a sus condiciones</li>
-        <li>comunicacion constante sobre los procedimientos</li>
+        <li data-i18n="li_1">Proteger su informacion personal.</li>
+        <li data-i18n="li_2">Resguardar sus contraseñas.</li>
+        <li data-i18n="li_3">Ser claros al momento de dirigirnos a usted.</li>
+        <li data-i18n="li_4">Adaptarnos a sus condiciones.</li>
+        <li data-i18n="li_5">Comunicacion constante sobre los procedimientos.</li>
     </div>
     <br>
     <br>
@@ -113,44 +113,44 @@
 
     <div id="ImagenYtextoConjunto">
         <img id="ImagenSeguridad3" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-        <p id="TextoImagenSeguridad3">Nuestra empresa siempre estara dispuesta a responder todas las dudas que tenga, siempre estaremos dispuestos
-            a ayudarlo en lo que necesiste</p>
+        <p id="TextoImagenSeguridad3" data-i18n="textoseguridad">Nuestra empresa siempre estara dispuesta a responder todas las dudas que tenga, siempre estaremos dispuestos
+            a ayudarlo en lo que necesite.</p>
     </div>
     <br><br>
 
-    <h2 id="SobreNosotros">Sobre Nosotros</h2>
+    <h2 id="SobreNosotros" data-i18n="titulo_sobrenosotros">Sobre Nosotros</h2>
     <br>
     <div id="MairaInfo">
-        <img id="ImagenMaira" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-        <h3 id="TextoMaira">MAIRA CHOCOU: ENCRGADA DEL FRONT-END (CSS) Y CREACION DE LOGOS </h3>
+        <img id="ImagenMaira" src="Imagenes/May.jpg" alt="">
+        <h3 id="TextoMaira" data-i18n="li_may">MAIRA CHOCOU: ENCRGADA DEL FRONT-END (CSS) Y CREACION DE LOGOS. </h3>
     </div>
 <br><br>
     <div id="EricInfo">
-        <img id="EricImagen" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-        <h3 id="TextoEric">ERIC ROTH: ENCARGADO DEL FRONT-END (HTML) Y DESARROLLO  DE CUESTIONARIOS</h3>
+        <img id="EricImagen" src="Imagenes/eric.jpg" alt="">
+        <h3 id="TextoEric" data-i18n="li_eric">ERIC ROTH: ENCARGADO DEL FRONT-END (HTML) Y DESARROLLO  DE CUESTIONARIOS.</h3>
     </div>
 <br><br>
     <div id="TimoteoInfo">
-        <img id="TimoteoImagen" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-        <h3 id="TextoTimoteo">TIMOTEO SAYAGO: ENCARGADO DE LA PLANIFICACION DE LAS PRESENTACIONES (POWERPOINT, CANVA,
+        <img id="TimoteoImagen" src="Imagenes/Timo.jpg" alt="">
+        <h3 id="TextoTimoteo" data-i18n="li_timo">TIMOTEO SAYAGO: ENCARGADO DE LA PLANIFICACION DE LAS PRESENTACIONES (POWERPOINT, CANVA,
             ETC)</h3>
     </div>
 <br><br>
     <div id="MiaInfo">
-        <img id="MiaImagen" src="Imagenes/Captura de pantalla 2023-08-07 214509.png"  alt="">
-        <h3 id="MiaEric">MIA FERREYRA: ENCARGADA DE LA DOCUMENTACION DE LOS TRABAJOS REALIZADOS</h3>
+        <img id="MiaImagen" src="Imagenes/Mia.jpg"  alt="">
+        <h3 id="MiaEric" data-i18n="li_mia">MIA FERREYRA: ENCARGADA DE LA DOCUMENTACION DE LOS TRABAJOS REALIZADOS.</h3>
     </div>
 <br><br>
     <div id="BraianInfo">
-        <img id="BraianImagen" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-        <h3 id="TextoBraian">BRAIAN JUNCO: ENCARGADO DEL BACK-END (PHP) Y CONEXION A BASE DE DATOS</h3>
+        <img id="BraianImagen" src="Imagenes/Braian.jpg" alt="">
+        <h3 id="TextoBraian" data-i18n="li_braian">BRAIAN JUNCO: ENCARGADO DEL BACK-END (PHP) Y CONEXION A BASE DE DATOS.</h3>
     </div>
 <br><br><br>
 
 
 
 
-<h2 id="Contacto">Contacto</h2>
+<h2 id="Contacto" data-i18n="titulo_contacto">Contacto</h2>
 <br><br>
 
 <div id="ImagenYtextoConjunto2">
@@ -165,7 +165,7 @@
 </div>
 <br><br><br>
 
-<h2 id="trabajos">TRABAJOS</h2>
+<h2 id="trabajos" data-i18n="titulo_trabajos">TRABAJOS</h2>
 <br><br>
 
 <li id="cuestionario"> <a href="documentos/cuestionario.docx" download="cuestionario.docx">
@@ -179,14 +179,14 @@
 <br><br>
 <div>
     <form id="formulario">
-        <h3>CONTACTENOS!</h3>
-        <label id="labeluno">escribe tu nombre y apellido
+        <h3 data-i18n="titulo_formulario">CONTACTENOS!</h3>
+        <label id="labeluno" data-i18n="form_nomape">escribe tu nombre y apellido
             <input type="text" placeholder="nombre" id="nombre"></label>
         <br>
-        <label id="labeldos">escribe tu email
+        <label id="labeldos"data-i18n="form_email">escribe tu email
             <input type="text" placeholder="email" id="email"></label>
         <br>
-        <label id="labeltres">escribe tu numero de telefono
+        <label id="labeltres"data-i18n="form_num">escribe tu numero de telefono
             <input type="text" placeholder="(solo numeros)" id="mensaje"></label>
         <br>
         <input type="submit" name="" id="boton">
@@ -203,8 +203,8 @@
         <a href="https://www.tecnica1lacosta.edu.ar/" target="_blank">
             <img src="Imagenes/logoblanco.webp" alt="Logo"class="logo-img" />
         </a>  
-        <p class="derecho">CIBER DATA | Innovación y tecnología al alcance.</p>
-        <p>Todo el contenido disponible en este sitio web ha sido desarrollado por estudiantes de la E.E.S.T. N°1 con fines educativos y de aprendizaje colaborativo.</p>
+        <p class="derecho" data-i18n="futer_derecho">CIBER DATA | Innovación y tecnología al alcance.</p>
+        <p data-i18n="futer_derecho1">Todo el contenido disponible en este sitio web ha sido desarrollado por estudiantes de la E.E.S.T. N°1 con fines educativos y de aprendizaje colaborativo.</p>
       </div>
   
       <div class="column-group">
@@ -221,7 +221,7 @@
     </div>
   
     <div id="derechos">
-      <p>© 2025 CIBER DATA. Todos los derechos reservados.</p>
+      <p data-i18n="futer_derecho2">© 2025 CIBER DATA. Todos los derechos reservados.</p>
     </div>
   </div>
   
