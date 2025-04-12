@@ -325,4 +325,54 @@ color: white;
   cursor: default;
 }
 
+#MairaInfo img {
+  width: 100%; 
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+    width: 400px; 
+    height: auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+    border: 1px solid #000; 
+    border-radius: 2px;
+}
 
+#EricInfo img {
+  width: 100%; 
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+    width: 400px; 
+    height: auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+    border: 1px solid #000; 
+    border-radius: 2px;
+}
+#TimoteoInfo img {
+  width: 100%; 
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+    width: 400px; 
+    height: auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+    border: 1px solid #000; 
+    border-radius: 2px;
+}
+#MiaInfo img {
+  width: 100%; 
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+    width: 400px; 
+    height: auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+    border: 1px solid #000; 
+    border-radius: 2px;
+}
+#BraianInfo img {
+  width: 100%; 
+  transition: transform 0.3s ease; 
+  cursor: pointer; 
+    width: 400px; 
+    height: auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
+    border: 1px solid #000; 
+    border-radius: 2px;
+}
