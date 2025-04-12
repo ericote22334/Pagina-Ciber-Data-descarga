@@ -14,7 +14,7 @@ const languageMap = {
   España: 'es',
   'Estados Unidos': 'en',
   Francia: 'fr',
-  Alemania: 'de' // (si querés agregar alemán, creá lang/de.json)
+  Alemania: 'al' // (si querés agregar alemán, creá lang/de.json)
 };
 
 // Mostrar lista de continentes
