@@ -9,21 +9,52 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="nav">
-          <div class="logo">
-            <img src="Imagenes/logo.png" alt="Logo" class="logo-img">
-          </div>
-          <div class="nav-links">
-            <button class="nav-link" onclick="location.href='#Servicios'" data-i18n="nav_servicios">Servicios</button>
-            <button class="nav-link" onclick="location.href='#TituloSeguridad'"data-i18n="nav_seguridad">Seguridad</button>
-            <button class="nav-link" onclick="location.href='#SobreNosotros'"data-i18n="nav_sobrenosotros">Sobre Nosotros</button>
-            <button class="nav-link" onclick="location.href='#trabajos'"data-i18n="nav_trabajos">Trabajos</button>
-            <button class="nav-link" onclick="location.href='#Contacto'"data-i18n="nav_contacto">Contacto</button>
-            <button class="nav-link" onclick="location.href='#formulario'"data-i18n="nav_formulario">Formulario</button>
+  <nav class="navbar">
+    <div class="nav">
+      <div class="logo">
+        <img src="Imagenes/logo.png" alt="Logo" class="logo-img">
+      </div>
+      <div class="nav-links">
+        <button class="nav-link" onclick="location.href='#Servicios'" data-i18n="nav_servicios">Servicios</button>
+        <button class="nav-link" onclick="location.href='#TituloSeguridad'" data-i18n="nav_seguridad">Seguridad</button>
+        <button class="nav-link" onclick="location.href='#SobreNosotros'" data-i18n="nav_sobrenosotros">Sobre Nosotros</button>
+        <button class="nav-link" onclick="location.href='#trabajos'" data-i18n="nav_trabajos">Trabajos</button>
+        <button class="nav-link" onclick="location.href='#Contacto'" data-i18n="nav_contacto">Contacto</button>
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+        <div class="mini-menu">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQABADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIG/8QAIxAAAgIABQQDAAAAAAAAAAAAAQMCBAAREiExBUFRcROBsf/EABQBAQAAAAAAAAAAAAAAAAAAAAX/xAAWEQADAAAAAAAAAAAAAAAAAAAAEiL/2gAMAwEAAhEDEQA/AMBTp03dNglMVuttjqnKQ2UPOfntkOThbqVVUJ12BKnogZQZpy+Ucc8knwePWJrWqyqEHVmrTahEBqpbBoAH1n635wt3a9mjN1p8X2pw0qVEbKB/CO/c4OphSVP/2Q==" class="off">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAQABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAQIEBf/EACMQAAEDAwQDAQEAAAAAAAAAAAQBAgUDESEAEjFBBlFhMkL/xAAUAQEAAAAAAAAAAAAAAAAAAAAF/8QAGBEAAwEBAAAAAAAAAAAAAAAAABIiMUH/2gAMAwEAAhEDEQA/AM+Bg4mS8coRccMOdNG01qVyH/kRvHPKKmMdr8uujPwUTG+NkRpw1AKWCbvHKa2zTGphc9u9p0q+rLqeMl4kSCGkYgtoE0HTahIz3bWGNanPrdyqWzn7p5ibh5CArnyZNMyVLpK0QSkt2BNXtVX+7ol1wuLJiyaHt+6Kyp//2Q==" class="on">
+          </label>
+          <div class="language-selector">
+            <button id="langBtn" data-i18n="pais">País-Idioma</button>
+            <div class="dropdown" id="continentMenu"></div>
           </div>
         </div>
-      </nav>
+        <script>
+          const checkbox = document.getElementById('checkbox');
+          const miniMenu = document.querySelector('.mini-menu');
+        
+          checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+              miniMenu.style.display = 'flex';
+            } else {
+              miniMenu.style.display = 'none';
+            }
+          });
+        </script>
+        
+      </div>
+    </div>
+  </nav>
+  <script src="JavaScript/traduccion.js"></script>
 
     <div class="carousel">
         <div class="carousel-images">
@@ -120,50 +151,33 @@
 
     <h2 id="SobreNosotros" data-i18n="titulo_sobrenosotros">Sobre Nosotros</h2>
     <br>
-    <div id="MairaInfo">
-        <img id="ImagenMaira" src="Imagenes/May.jpg" alt="">
-        <h3 id="TextoMaira" data-i18n="li_may">MAIRA CHOCOU: ENCRGADA DEL FRONT-END (CSS) Y CREACION DE LOGOS. </h3>
-    </div>
-<br><br>
-    <div id="EricInfo">
-        <img id="EricImagen" src="Imagenes/eric.jpg" alt="">
-        <h3 id="TextoEric" data-i18n="li_eric">ERIC ROTH: ENCARGADO DEL FRONT-END (HTML) Y DESARROLLO  DE CUESTIONARIOS.</h3>
-    </div>
-<br><br>
-    <div id="TimoteoInfo">
-        <img id="TimoteoImagen" src="Imagenes/Timo.jpg" alt="">
-        <h3 id="TextoTimoteo" data-i18n="li_timo">TIMOTEO SAYAGO: ENCARGADO DE LA PLANIFICACION DE LAS PRESENTACIONES (POWERPOINT, CANVA,
-            ETC)</h3>
-    </div>
-<br><br>
-    <div id="MiaInfo">
-        <img id="MiaImagen" src="Imagenes/Mia.jpg"  alt="">
-        <h3 id="MiaEric" data-i18n="li_mia">MIA FERREYRA: ENCARGADA DE LA DOCUMENTACION DE LOS TRABAJOS REALIZADOS.</h3>
-    </div>
-<br><br>
-    <div id="BraianInfo">
-        <img id="BraianImagen" src="Imagenes/Braian.jpg" alt="">
-        <h3 id="TextoBraian" data-i18n="li_braian">BRAIAN JUNCO: ENCARGADO DEL BACK-END (PHP) Y CONEXION A BASE DE DATOS.</h3>
+    <div class="equipo">
+      <div class="miembro">
+        <img src="Imagenes/May.jpg" alt="">
+        <h3 data-i18n="li_may">MAIRA CHOCOU: ENCARGADA DEL FRONT-END (CSS) Y CREACION DE LOGOS.</h3>
+      </div>
+      <div class="miembro">
+        <img src="Imagenes/eric.jpg" alt="">
+        <h3 data-i18n="li_eric">ERIC ROTH: ENCARGADO DEL FRONT-END (HTML) Y DESARROLLO DE CUESTIONARIOS.</h3>
+      </div>
+      <div class="miembro">
+        <img src="Imagenes/Timo.jpg" alt="">
+        <h3 data-i18n="li_timo">TIMOTEO SAYAGO: ENCARGADO DE LA PLANIFICACION DE LAS PRESENTACIONES.</h3>
+      </div>
+      <div class="miembro">
+        <img src="Imagenes/Mia.jpg" alt="">
+        <h3 data-i18n="li_mia">MIA FERREYRA: ENCARGADA DE LA DOCUMENTACION DE LOS TRABAJOS REALIZADOS.</h3>
+      </div>
+      <div class="miembro">
+        <img src="Imagenes/Braian.jpg" alt="">
+        <h3 data-i18n="li_braian">BRAIAN JUNCO: ENCARGADO DEL BACK-END (PHP) Y CONEXION A BASE DE DATOS.</h3>
+      </div>
     </div>
 <br><br><br>
 
 
 
 
-<h2 id="Contacto" data-i18n="titulo_contacto">Contacto</h2>
-<br><br>
-
-<div id="ImagenYtextoConjunto2">
-    <img id="ImagenInstagram" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-    <link id="TextoInstagram" rel="stylesheet" href=""> Aqui va el instagram
-</div>
-<br><br><br>
-
-<div id="ImagenYtextoConjunto3">
-    <img id="ImagenWhatsapp" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-    <link id="TextoWhatsapp" rel="stylesheet" href=""> Aqui va el whatsapp (no vamos a hacer un whatsapp pero bueno)
-</div>
-<br><br><br>
 
 <h2 id="trabajos" data-i18n="titulo_trabajos">TRABAJOS</h2>
 <br><br>
@@ -257,24 +271,44 @@
 
 
 <br><br>
-<div>
-    <form id="formulario">
-        <h3 data-i18n="titulo_formulario">CONTACTENOS!</h3>
-        <label id="labeluno" data-i18n="form_nomape">escribe tu nombre y apellido
-            <input type="text" placeholder="nombre" id="nombre"></label>
-        <br>
-        <label id="labeldos"data-i18n="form_email">escribe tu email
-            <input type="text" placeholder="email" id="email"></label>
-        <br>
-        <label id="labeltres"data-i18n="form_num">escribe tu numero de telefono
-            <input type="text" placeholder="(solo numeros)" id="mensaje"></label>
-        <br>
-        <input type="submit" name="" id="boton">
+<div class="centrar-card">
+<div class="card">
+  <h4 class="title" data-i18n="titulo_formulario">¡CONTÁCTENOS!</h4>
+  <form id="Contacto">
+    
+    <div class="field">
+      <svg class="input-icon" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <path d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/>
+      </svg>
+      <input type="text" placeholder="Nombre y Apellido" id="nombre" class="input-field" data-i18n="nom">
+    </div>
+
+    <div class="field">
+      <svg class="input-icon" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <path d="M80 192V144C80 64.47 144.5 0 224 0C303.5 0 368 64.47 368 144V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H80zM144 192H304V144C304 99.82 268.2 64 224 64C179.8 64 144 99.82 144 144V192z"/>
+      </svg>
+      <input type="email" placeholder="Email" id="email" class="input-field" data-i18n="email">
+    </div>
+
+    <div class="field">
+      <svg class="input-icon" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+        <path d="M437.5 336.1l-83.88-83.88c10.25-21.5 15.62-45.13 15.62-70.25C369.2 81.94 287.3 0 185.6 0C83.94 0 2 81.94 2 182.1c0 100.2 81.94 182.1 182.1 182.1c25.12 0 48.75-5.375 70.25-15.62l83.88 83.88c12.5 12.5 32.75 12.5 45.25 0l53.13-53.13C450 368.9 450 348.6 437.5 336.1z"/>
+      </svg>
+      <input type="tel" placeholder="Teléfono" id="telefono" class="input-field">
 
 
-    </form>
+    </div>
+
+    <button class="btn" type="submit" data-i18n="enviar">Enviar</button>
+  </form>
 </div>
+</div>
+
+
 <br><br><br>
+
+
+
 
 <div class="futer">
     <div class="footer-top">
@@ -305,17 +339,10 @@
     </div>
   </div>
   
-  <footer>
-    <div class="language-selector">
-      <button id="langBtn"data-i18n="pais"> País-Idioma</button>
-      <div class="dropdown" id="continentMenu"></div>
-    </div>
-  </footer>
   
-  <script src="JavaScript/traduccion.js"></script>
   
 
-   
+ 
 
 </body>
 
