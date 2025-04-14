@@ -3,18 +3,24 @@ const continentMenu = document.getElementById('continentMenu');
 
 // Datos: continentes y países
 const continents = {
-  América: ['Argentina', 'Estados Unidos', 'México'],
-  Europa: ['Francia', 'España', 'Alemania']
+  América: ['Brasil', 'Estados Unidos', 'México'],
+  Europa: [ 'Alemania', 'Francia', 'Italia', 'España'],
+  Asia: ['China', 'Corea', 'Indonesia', 'Japon']
 };
 
 // Mapear país a idioma
 const languageMap = {
-  Argentina: 'es',
+  Brasil: 'por',
   México: 'es',
   España: 'es',
   'Estados Unidos': 'en',
   Francia: 'fr',
-  Alemania: 'al' // (si querés agregar alemán, creá lang/de.json)
+  Alemania: 'al' ,
+  Italia: 'it' ,
+  China: 'ch',
+  Corea: 'co',
+  Japon: 'ja',
+  Indonesia: 'in'
 };
 
 // Mostrar lista de continentes
