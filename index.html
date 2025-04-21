@@ -58,11 +58,13 @@
 
     <div class="carousel">
         <div class="carousel-images">
-            <img id="imagen1" src="Imagenes/imagen1.jpg" alt="Imagen1" class="active">
-            <img src="Imagen2.jpg" alt="Imagen2">
-            <img src="imagen3.jpg" alt="Imagen3">
+            <img id="imagen1" src="Imagenes/banner.jpg" alt="Imagen1" class="active">
+            <div class="texto" data-i18n="emp">Ciber Data</div>
+            <div class="texto2" data-i18n="emp1">Cuidandote a vos y tu empresa.</div>
+            <div class="cardd"></div>
+            <img id="imagen2"src="Imagenes/banner2.png" alt="Imagen2">
+            <img id="imagen3"src="Imagenes/markus-spiske-FXFz-sW0uwo-unsplash.jpg" alt="Imagen3">
         </div>
-
 
         <button class="button prev" onclick="changeSlide(-1)">
             <div class="button-box">
@@ -135,17 +137,17 @@
     <br>
     <br><br>
 
-    <div class="ImagenesSeguridad">
-        <img id="ImgSeguridad1" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-        <img id="ImgSeguridad2" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-    </div>
-    <br><br><br><br>
+    
 
 
     <div id="ImagenYtextoConjunto">
-        <img id="ImagenSeguridad3" src="Imagenes/Captura de pantalla 2023-08-07 214509.png" alt="">
-        <p id="TextoImagenSeguridad3" data-i18n="textoseguridad">Nuestra empresa siempre estara dispuesta a responder todas las dudas que tenga, siempre estaremos dispuestos
-            a ayudarlo en lo que necesite.</p>
+      <div class="imagen-blur-wrapper">
+        <img id="ImagenSeguridad3" src="Imagenes/AA1uJaud.jpg" alt="">
+      </div>
+      <p id="TextoImagenSeguridad3" data-i18n="textoseguridad">
+        Nuestra empresa siempre estará dispuesta a responder todas las dudas que tenga, siempre estaremos dispuestos
+        a ayudarlo en lo que necesite.
+      </p>
     </div>
     <br><br>
 
@@ -200,6 +202,10 @@
     <span class="tooltip" data-i18n="desc">Descargar</span>
   </button>
 </a>
+</div>
+
+<div id="vistaPrevia" style="display: none; margin-top: 10px;">
+  <iframe id="iframePrevia" width="100%" height="500px" style="border: 1px solid #ccc; border-radius: 8px;"></iframe>
 </div>
 <br><br>
 <div class="centrar-card">
