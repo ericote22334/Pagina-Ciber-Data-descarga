@@ -72,3 +72,20 @@ function traducirPagina(idioma) {
     })
     .catch(err => console.error("Error al cargar idioma:", err));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+  function mostrarVistaPrevia(archivo) {
+    const url = `https://view.officeapps.live.com/op/embed.aspx?src=${window.location.origin}/${archivo}`;
+    document.getElementById('iframePrevia').src = url;
+    document.getElementById('vistaPrevia').style.display = 'block';
+  }
