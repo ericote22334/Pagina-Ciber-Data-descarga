@@ -8,10 +8,16 @@ body {
 
 #imagen1{
     width: 200%;
-    border-radius: 50px;
-    height: 110%;
+    height: 750px;
 }
-
+#imagen2{
+  width: 200%;
+  height: 750px;
+}
+#imagen3{
+  width: 200%;
+  height: 750px;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -269,25 +275,29 @@ body {
 }
 
 ------------------------------------------------------ CARRUSEL
+
+
 .carousel {
-    position: relative;
-    max-width: 100%; 
-    margin: 20px auto; 
-    overflow: hidden; 
+  position: relative;
+  max-width: 100%; 
+  margin: 20px auto; 
+  overflow: hidden; 
 }
 
 .carousel-images {
-    display: flex; 
-    transition: transform 0.5s ease; 
+  display: flex; 
+  transition: transform 0.5s ease; 
 }
 
 .carousel-images img {
-    max-width: 100%; 
-    display: none; 
+  max-width: 100%; 
+  display: none; 
+  width: 200%;
+  height: 110%;
 }
 
 .carousel-images img.active {
-    display: block; /* Muestra solo la imagen activa */
+  display: block; /* Muestra solo la imagen activa */
 }
 .button {
     display: block;
@@ -549,9 +559,14 @@ color: white;
 .miembro:active img {
   transform: scale(0.9);
 }
+
+
 .miembro h3 {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(211, 182, 119, 0.541);
+  width: 250px;
+  width: 250px;
 }
+
 .descarga {
   color: white;
 }
@@ -732,3 +747,88 @@ color: white;
     align-items: center;
    }
    
+#ListaSeguridad {
+  color: white;
+  padding-left: 9px;
+}
+#subtitulo3 {
+  color: white;
+  padding-left: 9px;
+}
+
+#TextoImagenSeguridad3  {
+  color: white;
+  padding-left: 9px;
+}
+
+#ImagenSeguridad3 {
+  width: 90%;
+    height: 100%;
+}
+
+#ImagenYtextoConjunto {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.imagen-blur-wrapper {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+}
+
+
+.imagen-blur-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(31, 32, 41) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+#ImagenSeguridad3 {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.texto {
+  position: absolute;
+  top: 30%; /* Posición vertical */
+  left: 20%; /* Posición horizontal */
+  transform: translate(-50%, -50%); /* Centra exactamente */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+  z-index: 3;
+}
+.texto2 {
+  position: absolute;
+  top: 40%; /* Posición vertical */
+  left: 32%; /* Posición horizontal */
+  transform: translate(-50%, -50%); /* Centra exactamente */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+  z-index: 3;
+}
+.cardd {
+  position: absolute;
+  top: 40%; /* Posición vertical */
+  left: 55%; /* Posición horizontal */
+  width: 400px; 
+  height: 400px; 
+      background-color: rgba(33, 33, 33, 0.5);
+      backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
