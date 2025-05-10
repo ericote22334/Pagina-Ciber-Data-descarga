@@ -413,6 +413,7 @@ body {
       box-shadow: 0 4px 6px rgba(0, 0, 0,0.3);
       border: 1px solid #000; 
       border-radius: 2px;
+      
   }
   .service-block img:hover {
     transform: scale(1.1); 
@@ -436,7 +437,54 @@ body {
     justify-content: center; 
     align-items: center; 
 }
-
+.imagen-blur-wrapper{
+  display: flex;  
+  position: relative;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 100px; 
+    transition: transform 0.3s ease; 
+    transition-duration: all 300ms ease-in-out;
+}
+#TextoImagenSeguridad3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  box-shadow: #000;
+  box-sizing: border-box;
+  font-size: large;
+}
+#ImagenSeguridad4{
+  display: flex;  
+   object-fit: cover; 
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 47%;
+  border-radius: 100px; 
+    transition: transform 0.3s ease; 
+    transition-duration: all 300ms ease-in-out;
+}
+#ImagenSeguridad3{
+  display: flex;  
+   object-fit: cover; 
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 100px; 
+    transition: transform 0.3s ease; 
+    transition-duration: all 300ms ease-in-out;
+}
+.imagen-blur-wrapper img:hover {
+    transform: scale(1.1); 
+    transition-duration: all 300ms ease-in-out;
+      transition: transform 0.3s ease; 
+  }
 .service-image {
     max-width: 100%; 
     max-height: 80%; 
